@@ -1,0 +1,128 @@
+#1
+The air is thick with mystery. The ground beneath you is cold stone, and dim torchlight flickers along the damp walls. A heavy wooden door stands before you, slightly ajar, while a narrow tunnel leads into darkness behind you. What will you do?
+
+Enter the wooden door #2
+Venture into the tunnel #3
+
+#2
+You push the wooden door open and step inside. The room is lined with bookshelves filled with ancient tomes. A grand desk sits in the center, with a single candle burning beside an open book. As you step closer, the pages flutter, and words appear: "Knowledge is power, but secrets are dangerous." 
+
+Read the book #4
+Search the bookshelves #5
+Leave the room and return to the hallway #1
+
+#3
+You carefully step into the dark tunnel. The air grows colder, and you hear distant dripping water. After a few steps, you see a faint blue glow ahead. As you approach, you realize it's a pedestal with a crystal orb resting on it. The orb pulses with an eerie light.
+
+Touch the orb #6
+Ignore it and keep walking #7
+Return to the hallway #1
+
+#4
+You begin reading the book, and as you do, the candle flickers violently. The words shift before your eyes, forming a riddle: "I am always hungry, I must always be fed. The thing I touch will soon turn red. What am I?"
+
+Say "Fire" #8
+Say "Time" #9
+Ignore the riddle and close the book #2
+
+#5
+You scan the shelves and find a small, locked box hidden behind a row of dusty books. It has an intricate engraving of an eye and no visible keyhole.
+
+Try to open it by force #10
+Look for clues in the books #11
+Leave the room and return to the hallway #1
+
+#6
+As soon as your fingers brush the orb, a surge of energy flows through you. Your vision goes dark, and when you open your eyes, you're in a completely different place—a grand hall filled with statues.
+
+Examine the statues #12
+Look for an exit #13
+
+#7
+You walk past the orb and continue down the tunnel. The walls narrow, and eventually, you reach a dead end. Strange symbols cover the walls.
+
+Study the symbols #14
+Turn back #3
+
+#8
+As soon as you say "Fire," the book glows, and the candle's flame rises high. A hidden compartment in the desk slides open, revealing a silver key.
+
+Take the key #15
+Leave the room and return to the hallway #1
+
+#9
+The book trembles violently and slams shut. A chilling whisper fills the air: "Wrong answer." The candle is snuffed out, leaving you in darkness.
+
+Feel around for the exit #1
+Try to open the book again #4
+
+#10
+You attempt to pry the box open, but the moment you touch it, an intense burning pain shoots through your hand. You jerk away, but the damage is done—your vision blurs, and darkness overtakes you. (BAD ENDING)
+
+#11
+You search the books for clues and find an old journal with a sketch of the box. It describes a hidden latch at the base. You turn the box over and press a small indentation. The lid clicks open, revealing an ornate brass key.
+
+Take the brass key #16
+Leave the room and return to the hallway #1
+
+#12
+The statues depict robed figures, each holding an object: a sword, a book, and a lantern. A plaque beneath them reads: "Only wisdom lights the way."
+
+Touch the book-holding statue #17
+Touch the sword-holding statue #18
+Touch the lantern-holding statue #19
+
+#13
+You search for an exit and find a large door with three keyholes.
+
+If you have all three keys—silver, brass, and golden—go to #25.
+If you're missing any key, the door remains firmly shut. You'll need to keep exploring.
+
+Search for another way out #12
+
+#14
+The symbols seem to tell a story of an ancient civilization that worshiped the crystal orb. They hint that the orb has the power to shift reality.
+
+Touch the orb (if you haven't already) #6
+Go back #3
+
+#15
+You pocket the silver key and exit the room.
+
+Return to the hallway #1
+Explore the tunnel #3
+
+#16
+You take the brass key and leave the room.
+
+Return to the hallway #1
+Explore the tunnel #3
+
+#17
+The book-holding statue glows, and a small panel opens in the wall, revealing a golden key.
+
+Take the golden key #22
+Examine the statues further #12
+
+#18
+The moment you touch the sword-holding statue, a loud rumbling fills the hall. The ground splits beneath you, and you fall into an endless abyss. (BAD ENDING)
+
+#19
+The lantern-holding statue glows, and a hidden passage opens in the wall. A mysterious hum comes from the passage, as though reality flickers beyond.
+
+Enter the passage #23
+Ignore it and keep searching #12
+
+#22
+You take the golden key and return to the large door with three keyholes.
+
+Go to the door #13
+
+#23
+The passage leads to another chamber with a strange mirror. Your reflection grins at you, though you are not smiling. Before you can react, your reflection steps out of the mirror, and everything goes black. (NEUTRAL ENDING)
+
+#24
+(Obsolete - replaced by #13 logic)
+
+#25
+The locks click open in unison. The door creaks open, revealing a bright light. As you step through, you find yourself outside under a starry sky. The fresh air fills your lungs, and you realize you've escaped. (GOOD ENDING)
