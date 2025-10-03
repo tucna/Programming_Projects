@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microservices Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { margin-top: 30px; }
+        button { margin-bottom: 10px; }
+        ul { list-style-type: none; padding-left: 0; }
+        .result-box { margin-top: 10px; padding: 10px; border: 1px solid #ccc; width: fit-content; }
+    </style>
+</head>
+<body>
+    <h1>Microservices Demo Frontend</h1>
+
+    <!-- User Section -->
+    <h2>Users</h2>
+    <button onclick="getUsers()">Get Users</button>
+    <ul id="usersList"></ul>
+
+    <!-- Get Single User Section -->
+    <h2>Get User by ID</h2>
+    <input type="number" id="userIdInput" placeholder="Enter user ID" />
+    <button onclick="getUserById()">Get User</button>
+    <div id="singleUserResult" class="result-box"></div>
+
+    <script>
+        // Replace with your gateway URL if using one, or directly user/product service
+        const GATEWAY_URL = "http://localhost:5001";
+
+        // Fetch all users
+        async function getUsers() {
+            try {
+                const response = await fetch(`${GATEWAY_URL}/users`);
+                const users = await response.json();
+                const usersList = document.getElementById("usersList");
+                usersList.innerHTML = "";
+                users.forEach(user => {
+                    const li = document.createElement("li");
+                    li.textContent = `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}`;
+                    usersList.appendChild(li);
+                });
+            } catch (err) {
+                alert("Error fetching users: " + err);
+            }
+        }
+
+        // Fetch single user by ID
+        async function getUserById() {
+            const userId = document.getElementById("userIdInput").value;
+            const resultBox = document.getElementById("singleUserResult");
+
+            if (!userId) {
+                resultBox.textContent = "Please enter a valid user ID.";
+                return;
+            }
+
+            try {
+                const response = await fetch(`${GATEWAY_URL}/users/${userId}`);
+                if (!response.ok) {
+                    const errData = await response.json();
+                    resultBox.textContent = `Error: ${errData.message}`;
+                    return;
+                }
+                const user = await response.json();
+                resultBox.textContent = `ID: ${user.id}, Name: ${user.name}, Email: ${user.email}`;
+            } catch (err) {
+                resultBox.textContent = "Error fetching user: " + err;
+            }
+        }
+    </script>
+</body>
+</html>
